@@ -1,2 +1,1 @@
-# BSM-Delivery-Services
-Its a delivery service
+This is BSM delivery services
