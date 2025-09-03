@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pick & Drop - Phirangi Express</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 12px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .info {
+      margin-top: 10px;
+    }
+    .info h3 {
+      margin: 6px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .info p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+      margin-top: 6px;
+    }
+    .book-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #4CAF50;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🚖 Pick & Drop Services</h2>
+
+  <div class="grid">
+    <!-- Bike Service -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2018/05/31/07/58/motorcycle-3447510_960_720.jpg" alt="Bike">
+      <div class="info">
+        <h3>Bike Ride</h3>
+        <p>Quick & affordable</p>
+        <p class="price">₹30 per km</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20Bike%20Pick%20%26%20Drop" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Auto Service -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/27/19/20/rickshaw-1283236_960_720.jpg" alt="Auto">
+      <div class="info">
+        <h3>Auto</h3>
+        <p>Comfortable short rides</p>
+        <p class="price">₹40 per km</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20an%20Auto%20Pick%20%26%20Drop" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Car Service -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_960_20.jpg" alt="Car">
+      <div class="info">
+        <h3>Car Ride</h3>
+        <p>Family & group travel</p>
+        <p class="price">₹50 per km</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20Car%20Pick%20%26%20Drop" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Goods Carrier -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/09/05/20/49/van-2719381_960_720.jpg" alt="Goods Carrier">
+      <div class="info">
+        <h3>Goods Carrier</h3>
+        <p>Transport items safely</p>
+        <p class="price">₹100 per km</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20Goods%20Carrier%20Pick%20%26%20Drop" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Parcels Services -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/09/05/20/49/van-2719381_960_720.jpg" alt="Goods Carrier">
+      <div class="info">
+        <h3>Parcels Services</h3>
+        <p>Parcels Services</p>
+        <p class="price">₹100 per km</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20Goods%20Carrier%20Pick%20%26%20Drop" class="book-btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
