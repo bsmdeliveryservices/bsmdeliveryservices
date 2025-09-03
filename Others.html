@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    .card h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .card input,
+    .card textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .card textarea {
+      height: 100px;
+      resize: none;
+    }
+    .card button {
+      width: 100%;
+      padding: 12px;
+      background: #25d366;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card button:hover {
+      background: #1da851;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Other Services</h2>
+    <p>Type your requirement below and send us on WhatsApp:</p>
+
+    <input type="text" id="custName" placeholder="Your Name">
+    <input type="text" id="custPhone" placeholder="Your Phone Number">
+    <textarea id="serviceMessage" placeholder="Type your requirement here"></textarea>
+    
+    <button onclick="sendToWhatsApp()">Send on WhatsApp</button>
+  </div>
+
+  <script>
+    function sendToWhatsApp() {
+      let name = document.getElementById("custName").value.trim();
+      let phoneNum = document.getElementById("custPhone").value.trim();
+      let msg = document.getElementById("serviceMessage").value.trim();
+
+      if(msg === "") {
+        alert("Please type your requirement first.");
+        return;
+      }
+
+      // Replace with your WhatsApp number (example: 919876543210)
+      let businessNumber = "919705969974"; 
+
+      let fullMsg = "Name: " + name + "\nPhone: " + phoneNum + "\n\nRequirement:\n" + msg;
+      let url = "https://wa.me/" + businessNumber + "?text=" + encodeURIComponent(fullMsg);
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
