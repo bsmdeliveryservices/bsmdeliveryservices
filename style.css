@@ -8,13 +8,21 @@
 
 body {
   background: #f9f9f9;
+<<<<<<< HEAD
   color: #333;
+=======
+  color: #2334cf;
+>>>>>>> 71b8466f603276287adaf2be143fd83e6c8e4350
   padding-bottom: 60px; /* space for bottom nav */
 }
 
 /* Header */
 header {
+<<<<<<< HEAD
   background: #4CAF50;
+=======
+  background: #2476fa;
+>>>>>>> 71b8466f603276287adaf2be143fd83e6c8e4350
   color: white;
   padding: 15px;
   text-align: center;
@@ -151,6 +159,9 @@ header {
     justify-content: flex-start;
     gap: 40px;
   }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 71b8466f603276287adaf2be143fd83e6c8e4350
 }
